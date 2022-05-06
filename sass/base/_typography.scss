@@ -1,0 +1,45 @@
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+p {
+  line-height: 1.1;
+}
+body {
+  background-color: $color-white-light;
+  font-family: Open-sans, sans-serif;
+}
+
+.img-credit {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: $color-black;
+  a {
+    text-decoration: none;
+    color: $color-black;
+    font-family: Open-sans, sans-serif;
+    border-bottom: 1px solid $color-black;
+  }
+}
+
+.heading-primary {
+  font-size: 2.4rem;
+  font-weight: 300;
+  @include respond(tab-port) {
+    font-size: 3.6rem;
+  }
+  @include respond(tab-land) {
+    font-size: 4.4rem;
+  }
+  @include respond(desktop) {
+    font-size: 4.8rem;
+  }
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  &__bold {
+    display: inline-block;
+    margin-bottom: 4rem;
+  }
+}

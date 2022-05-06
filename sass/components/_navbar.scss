@@ -1,0 +1,56 @@
+.section-header {
+  padding: 1.5rem 2rem;
+  background-color: $color-white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    width: 6.5rem;
+  }
+
+  &__menu {
+    list-style: none;
+    display: none;
+    @include respond(tab-land) {
+      display: block;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    padding: 0rem 2rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-family: Open-sans, sans-serif;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: $color-black;
+    transition: all 0.3s;
+    &:hover {
+      color: $color-orange;
+    }
+  }
+}
+
+.hamburger {
+  &__icon {
+    display: block;
+    background-color: $color-black;
+    height: 0.3rem;
+    width: 2.5rem;
+    border-radius: 2px;
+    &:not(:last-child) {
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  @include respond(tab-land) {
+    display: none;
+  }
+}
